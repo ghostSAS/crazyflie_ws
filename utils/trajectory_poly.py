@@ -1,3 +1,7 @@
+"""
+define polynomial class that will be useful for cf trakcing
+
+"""
 from matplotlib import legend
 import numpy as np
 from typing import List, Union
