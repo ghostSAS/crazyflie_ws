@@ -8,20 +8,10 @@ TODO
     - test if cmdPosition() is stable for tracking dense waypoints
     - add yaw into the converted polynomial4d, yaw_k = arctan(dy_k, dx_k), s.t. abs(dyaw_k) <= threshold
 """
-import sys
-import os
-import csv
-
-# sys.path.append('..')
-# for p in sys.path:
-#     print(p)
-
-
-    
+   
 import numpy as np
 import casadi as ca
 import matplotlib.pyplot as plt
-
 
 
 
