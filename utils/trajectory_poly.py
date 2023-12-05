@@ -150,16 +150,12 @@ class Trajectory:
     fig, axs = plt.subplots(3, 1, figsize=(8, 6))
     
     steps = 150
-    # pos = np.zeros([resolution, 3])
-    # vel = np.zeros_like(pos)
-    #   res = self.eval(t)
-    #   pos, vel, acc = res.pos, res.vel, res.acc
     t_span = np.linspace(0, self.duration, steps)
     res_list = [
         [res.pos, res.vel, res.acc]
         for t in t_span
-        if (res := self.eval(t)) is not None
-    ]
+        if (res := self.eval(t)) is not None]
+    
     res = np.array(res_list)
     
     label = ['X', 'Y', 'Z']
